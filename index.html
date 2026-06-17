@@ -10,8 +10,7 @@
 
 <body>
     <nav>
-
-    <div class="nav-logo">
+        <div class="nav-logo">
         Albany
     </div>
 
@@ -30,7 +29,7 @@
         <li><a href="#contact">Contact</a></li>
 
     </ul>
-
+        <button id="theme-toggle">🌙</button>
     </nav>
 
     <header>
@@ -76,6 +75,12 @@
             la maintenance informatique, la cybersécurité, le développement web
             et la formation professionnelle.
         </p>
+        <p>
+Technicien supérieur, spécialisé en maintenance informatique avec plusieurs années d'expérience
+dans la gestion, le diagnostic et la réparation de systèmes informatiques. Fort d'une solide formation
+technique et de compétences pratiques, je suis passionné par la résolution efficace des pannes
+matérielles et logicielles, la configuration de réseaux et l’optimisation des performances des ordinateurs.
+        </p>
     </section>
 
        <section id="experience">
@@ -108,7 +113,6 @@
         </p>
     </div>
     
-
 </section>
 
 <section id="skills">
@@ -145,7 +149,20 @@
 
 </section>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js">
+
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        themeToggle.innerHTML = "☀️";
+    }else{
+        themeToggle.innerHTML = "🌙";
+    }
+});
+
+    </script>
 
     <section id="services">
 
@@ -181,7 +198,28 @@
 
 </section>
 
-    <section id="projets">
+<section id="stats">
+
+    <h2>Quelques Chiffres</h2>
+
+    <div class="card">
+        <h3>5+</h3>
+        <p>Années d'expérience</p>
+    </div>
+
+    <div class="card">
+        <h3>100+</h3>
+        <p>Ordinateurs maintenus</p>
+    </div>
+
+    <div class="card">
+        <h3>50+</h3>
+        <p>Étudiants formés</p>
+    </div>
+
+</section>
+
+<section id="projets">
 
     <h2>Mes Projets</h2>
 

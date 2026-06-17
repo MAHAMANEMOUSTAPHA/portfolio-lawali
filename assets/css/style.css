@@ -235,3 +235,38 @@ header{
 
 }
 
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    color:white;
+}
+
+.dark-mode .card{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode h2{
+    color:#64b5f6;
+}
+
+.card{
+    animation:fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
