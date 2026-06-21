@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahamane Moustapha Lawali | Portfolio</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio professionnel de Mahamane Moustapha Lawali. Expert en maintenance informatique, cybersécurité, développement web, formation professionnelle et transformation numérique au Niger.">
+<meta name="keywords" content="Mahamane Moustapha Lawali, Dogonney Informatique, informatique Niger, cybersécurité, développement web, maintenance informatique, GitHub Portfolio">
+<meta name="author" content="Mahamane Moustapha Lawali">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="icon" href="assets/images/logo.png">
+<title>Mahamane Moustapha Lawali | Informatique, Cybersécurité & Développement Web</title>
 </head>
 
 <body>
@@ -29,7 +35,9 @@
         <li><a href="#contact">Contact</a></li>
 
     </ul>
-        <button id="theme-toggle">🌙</button>
+        <li>
+            <button id="theme-toggle">🌙</button>
+        </li>
     </nav>
 
     <header>
@@ -39,6 +47,20 @@
 
         <img src="assets/images/logo.png" alt="Logo SID" class="logo">
 
+    <div class="hero-buttons">
+
+    <a href="assets/cv/CV_Mahamane_Moustapha_Lawali.pdf"
+       class="btn-cv"
+       download>
+       📄 Télécharger CV
+    </a>
+
+    <a href="https://www.linkedin.com/in/lawali-mahamane-moustapha-724226331" target="_blank" rel="noopener noreferrer"
+       class="btn-linkedin">
+       💼 LinkedIn
+    </a>
+
+    </div>
 
     <h1>MAHAMANE MOUSTAPHA Lawali </br>(Albany)</h1>
 
@@ -47,27 +69,16 @@
         Développement Web | Formateur Professionnel
     </p>
 
-    <div class="buttons">
+    <div class="hero-buttons">
 
         <a href="#contact" class="btn">
             Me contacter
-        </a>
-
-        <a href="https://www.linkedin.com/in/lawali-mahamane-moustapha-724226331"
-           target="_blank"
-           class="btn">
-            LinkedIn
-        </a>
-
-        <a href="assets/CV/CV_Mahamane_Moustapha_Lawali.pdf"
-           downloadclass="btn">
-            Télécharger mon CV
         </a>
     </div>
 
 </header>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>À propos</h2>
 
         <p>
@@ -83,11 +94,11 @@ matérielles et logicielles, la configuration de réseaux et l’optimisation de
         </p>
     </section>
 
-       <section id="experience">
+       <section id="experience" data-aos="fade-right">
 
     <h2>Expériences Professionnelles</h2>
 
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
         <h3>Co-Fondateur & Responsable Technique</h3>
         <p><strong>Dogonney Informatique</strong> | Depuis 2021</p>
         <p>
@@ -96,7 +107,7 @@ matérielles et logicielles, la configuration de réseaux et l’optimisation de
         </p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
         <h3>Formateur Vacataire</h3>
         <p><strong>ISMT Gaya</strong> | 2021 - 2023</p>
         <p>
@@ -115,7 +126,7 @@ matérielles et logicielles, la configuration de réseaux et l’optimisation de
     
 </section>
 
-<section id="skills">
+<section id="skills" data-aos="zoom-in">
 
     <h2>Compétences Techniques</h2>
 
@@ -149,22 +160,7 @@ matérielles et logicielles, la configuration de réseaux et l’optimisation de
 
 </section>
 
-    <script src="assets/js/script.js">
-
-    const themeToggle = document.getElementById("theme-toggle");
-    themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if(document.body.classList.contains("dark-mode")){
-        themeToggle.innerHTML = "☀️";
-    }else{
-        themeToggle.innerHTML = "🌙";
-    }
-});
-
-    </script>
-
-    <section id="services">
+    <section id="services" data-aos="fade-left">
 
     <h2>Mes Services</h2>
 
@@ -198,32 +194,11 @@ matérielles et logicielles, la configuration de réseaux et l’optimisation de
 
 </section>
 
-<section id="stats">
-
-    <h2>Quelques Chiffres</h2>
-
-    <div class="card">
-        <h3>5+</h3>
-        <p>Années d'expérience</p>
-    </div>
-
-    <div class="card">
-        <h3>100+</h3>
-        <p>Ordinateurs maintenus</p>
-    </div>
-
-    <div class="card">
-        <h3>50+</h3>
-        <p>Étudiants formés</p>
-    </div>
-
-</section>
-
-<section id="projets">
+<section id="projets" data-aos="flip-up">
 
     <h2>Mes Projets</h2>
 
-    <div class="card">
+    <div class="card" data-aos="flip-left">
         <h3>Portfolio Professionnel</h3>
         <p>
             Site web personnel développé avec HTML, CSS et GitHub Pages
@@ -266,7 +241,66 @@ matérielles et logicielles, la configuration de réseaux et l’optimisation de
 
 </section>
 
-    <section id="contact">
+<section id="stats" class="stats" data-aos="fade-up">
+    <h2>Mes Réalisations</h2>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <h3>5+</h3>
+            <p>Années d'expérience</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>100+</h3>
+            <p>Jeunes formés</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>50+</h3>
+            <p>Interventions techniques</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>10+</h3>
+            <p>Projets numériques</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials" data-aos="zoom-in-up">
+    <h2>Témoignages</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>
+                "Un excellent formateur et technicien.
+                Grâce à lui, j'ai acquis des compétences solides
+                en maintenance informatique."
+            </p>
+            <h4>— Ancien étudiant ISMT</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Très professionnel dans l'installation de nos
+                équipements informatiques et réseaux."
+            </p>
+            <h4>— Client Dogonney Informatique</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Un jeune entrepreneur engagé dans la transformation
+                numérique de la région de Gaya."
+            </p>
+            <h4>— Partenaire local</h4>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
 
         <p>Email : lawalimahamanemoustapha@gmail.com</p>
@@ -285,23 +319,88 @@ Voir mon profil LinkedIn
 </p>
 
 <p>
-WhatsApp :<a href="https://wa.me/22797292091" target="_blank">
+WhatsApp :<a href="https://wa.me/22797292091" target="_blank" rel="noopener noreferrer">
 Discuter sur WhatsApp
 </a>
 </p>
-
         <p>Gaya - Dosso - Niger</p>
     </section>
 
-<footer>
+<footer class="footer">
 
-    <p>
-        © 2026 Mahamane Moustapha Lawali |
-        Dogonney Informatique |
-        Gaya, Niger
-    </p>
+    <div class="footer-content">
+
+        <h3>Mahamane Moustapha Lawali</h3>
+
+        <p>
+            Informaticien | Cybersécurité | Développement Web |
+            Formateur Professionnel
+        </p>
+
+        <div class="footer-contact">
+
+            <p>📧 lawalimahamanemoustapha@gmail.com</p>
+
+            <p>📞 +227 97 29 20 91</p>
+
+            <p>📍 Gaya - Dosso, Niger</p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="https://www.linkedin.com/in/lawali-mahamane-moustapha-724226331"
+               target="_blank">
+               <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/MAHAMANEMOUSTAPHA"
+               target="_blank">
+               <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://wa.me/22797292091"
+               target="_blank">
+               <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Conçu et développé par Mahamane Moustapha Lawali (Albany).
+        </p>
+
+    </div>
 
 </footer>
+
+
+    <script defer src="assets/js/script.js">
+
+    </script>
+
+<a href="https://www.linkedin.com/in/lawali-mahamane-moustapha-724226331"
+   target="_blank"
+   class="linkedin-float">
+   <i class="fab fa-linkedin"></i>
+</a>
+ 
+ <a href="https://wa.me/22797292091"
+   target="_blank"
+   class="whatsapp-float">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1200,
+});
+
+</script>
 
 </body>
 </html>

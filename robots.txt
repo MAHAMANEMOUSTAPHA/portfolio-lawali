@@ -1,0 +1,3 @@
+user-agent: * Allow: /
+
+sitemap: https://mahamanemoustapha.github.io/portfolio-lawali/sitemap.xml
